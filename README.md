@@ -1,15 +1,3 @@
-# chat-check
+## Envio Blank Template
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.33. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+*Please refer to the [documentation website](https://docs.envio.dev) for a thorough guide on all Envio indexer features*

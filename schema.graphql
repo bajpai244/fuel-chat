@@ -1,0 +1,20 @@
+type ChatContract_Vec {
+  id: ID!
+}
+
+type ChatContract_Transfer {
+  id: ID!
+}
+
+type ChatContract_Mint {
+  id: ID!
+}
+
+type ChatContract_Burn {
+  id: ID!
+}
+
+type ChatContract_Call {
+  id: ID!
+}
+

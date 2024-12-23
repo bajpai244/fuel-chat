@@ -18,7 +18,10 @@ const main = async () => {
 
   console.log('Contract deployed at:', contract.id);
 
-  writeFileSync('contract.json', JSON.stringify(contract, null, 2));
+  writeFileSync(
+    'contract.json',
+    JSON.stringify({ contractId: contract.id.toB256() }, null, 2)
+  );
 };
 
 main();

@@ -1,19 +1,30 @@
 {
-  "name": "chat-check",
-  "module": "index.ts",
-  "type": "module",
+  "name": "envio-indexer",
+  "version": "0.1.0",
   "scripts": {
-    "fmt": "prettier --write .",
-    "fmt:check": "prettier --check ."
+    "clean": "tsc --clean",
+    "build": "tsc --build",
+    "watch": "tsc --watch",
+    "mocha": "ts-mocha test/**/*.ts",
+    "codegen": "envio codegen",
+    "dev": "envio dev",
+    "test": "pnpm mocha",
+    "start": "ts-node generated/src/Index.bs.js"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "prettier": "^3.2.5"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "@types/chai": "^4.3.11",    
+    "@types/mocha": "10.0.6",
+    "@types/node": "20.8.8",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2",
+    "chai": "4.3.10",
+    "mocha": "10.2.0"
   },
   "dependencies": {
-    "fuels": "^0.97.2"
+    "envio": "2.11.6"
+  },
+  "optionalDependencies": {
+    "generated": "./generated"
   }
 }

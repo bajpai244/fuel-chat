@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
+name: envio-indexer
+ecosystem: fuel
+networks:
+- id: 9889
+  start_block: 0
+  contracts:
+  - name: ChatContract
+    address:
+    - 0x24704da97dff62ae4949e17e6d9f92de04de7780ccf836dfdc4003bbc25421f1
+    abi_file_path: abis/chatcontract-abi.json
+    handler: src/EventHandlers.ts
+    events:
+    - name: Vec
+      logId: '2855558404146077188'
+    - name: Transfer
+    - name: Mint
+    - name: Burn
+    - name: Call

@@ -1,0 +1,19 @@
+{
+  "name": "chat-check",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fuels": "^0.97.2"
+  }
+}

@@ -14,7 +14,7 @@ const main = async () => {
 
   const utf8Bytes = new Uint8Array(
     Buffer.from(
-      `The gods envy us. They envy us because we're mortal, because any moment might be our last. Everything is more beautiful because we're doomed.`,
+      `I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain.`,
       'utf8'
     )
   );

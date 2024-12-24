@@ -1,5 +1,7 @@
 type ChatContract_Vec {
   id: ID!
+  message: [Int!]!
+  height: Int!
 }
 
 type ChatContract_Transfer {

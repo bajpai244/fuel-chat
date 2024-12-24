@@ -11,8 +11,11 @@ import {
 } from "generated";
 
 ChatContract.Vec.handler(async ({ event, context }) => {
+
   const entity: ChatContract_Vec = {
     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+    message: event.params,
+    height: event.block.height,
   };
 
   context.ChatContract_Vec.set(entity);
@@ -42,10 +45,10 @@ ChatContract.Burn.handler(async ({ event, context }) => {
   context.ChatContract_Burn.set(entity);
 });
 
-ChatContract.Call.handler(async ({ event, context }) => {
-  const entity: ChatContract_Call = {
-    id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
-  };
+// ChatContract.Call.handler(async ({ event, context }) => {
+//   const entity: ChatContract_Call = {
+//     id: `${event.chainId}_${event.block.height}_${event.logIndex}`,
+//   };
 
-  context.ChatContract_Call.set(entity);
-});
+//   context.ChatContract_Call.set(entity);
+// });

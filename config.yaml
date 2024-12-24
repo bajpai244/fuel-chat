@@ -16,4 +16,3 @@ networks:
     - name: Transfer
     - name: Mint
     - name: Burn
-    - name: Call
